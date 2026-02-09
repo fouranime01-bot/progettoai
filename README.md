@@ -36,5 +36,6 @@ Training (salva il modello in artifacts/):
 Predizione:
     docker run --rm progettoai python -m src.predict
 
-
-
+------------------------------------------------------------
+CI / CD (GitHub Actions):
+ unit, linter, docker build, artifact release
