@@ -1,11 +1,13 @@
 README.md
 pyproject.toml
 ./myproject/__init__.py
+./myproject/eda.py
 ./myproject/model.py
 ./myproject/predict.py
 ./myproject/training.py
 ./myproject/utils.py
 myproject/__init__.py
+myproject/eda.py
 myproject/model.py
 myproject/predict.py
 myproject/training.py
