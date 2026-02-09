@@ -1,14 +1,14 @@
 def test_imports():
-    import src.src.model
-    import src.src.training
-    import src.src.predict
-    import src.src.eda
+    import src.model
+    import src.training
+    import src.predict
+    import src.eda
     assert True
 
 
 def test_model_forward():
     import torch
-    from src.src.model import SimpleNet
+    from src.model import SimpleNet
 
     model = SimpleNet()
     x = torch.randn(1, 1, 28, 28)
