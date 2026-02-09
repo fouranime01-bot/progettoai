@@ -2,6 +2,7 @@ import torch
 from torchvision import datasets, transforms
 from src.model import SimpleNet
 
+
 def predict():
     print("Caricamento modello...")
     model = SimpleNet()
@@ -19,6 +20,7 @@ def predict():
         predicted_class = pred.argmax(dim=1).item()
 
     print(f"Predizione: {predicted_class}")
+
 
 if __name__ == "__main__":
     predict()

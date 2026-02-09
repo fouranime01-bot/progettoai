@@ -1,6 +1,8 @@
 import torch.nn as nn
 
 class SimpleNet(nn.Module):
+
+
     def __init__(self):
         super().__init__()
         self.layers = nn.Sequential(
@@ -10,6 +12,6 @@ class SimpleNet(nn.Module):
             nn.Linear(128, 10)
         )
 
+
     def forward(self, x):
         return self.layers(x)
-

@@ -16,6 +16,7 @@ CLASS_NAMES = {
     9: "Ankle Boot"
 }
 
+
 def main():
 
     print("=== EDA: Fashion-MNIST Dataset ===")
@@ -36,7 +37,6 @@ def main():
     print(f"Valore minimo: {sample_img.min().item():.4f}")
     print(f"Valore massimo: {sample_img.max().item():.4f}")
 
-    
     labels = [label for _, label in train_data]
     unique, counts = np.unique(labels, return_counts=True)
 
@@ -44,7 +44,6 @@ def main():
     for u, c in zip(unique, counts):
         print(f"Classe {u} ({CLASS_NAMES[u]}): {c} campioni")
 
-    
     plt.figure(figsize=(10, 5))
     plt.bar(unique, counts, color="steelblue")
     plt.title("Distribuzione delle classi (Fashion-MNIST)")
@@ -54,7 +53,6 @@ def main():
     plt.tight_layout()
     plt.show()
 
-    
     fig, axes = plt.subplots(2, 5, figsize=(12, 5))
     for i, ax in enumerate(axes.flat):
         img, label = train_data[i]
@@ -65,6 +63,7 @@ def main():
     plt.suptitle("Esempi dal dataset Fashion-MNIST", fontsize=14)
     plt.tight_layout()
     plt.show()
+
 
 if __name__ == "__main__":
     main()

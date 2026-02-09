@@ -3,6 +3,7 @@ from torch.utils.data import DataLoader
 from torchvision import datasets, transforms
 from src.model import SimpleNet
 
+
 def train():
     print("Inizio training...")
 
@@ -28,6 +29,6 @@ def train():
     torch.save(model.state_dict(), "artifacts/model.pt")
     print("Modello salvato in artifacts/model.pt")
 
+
 if __name__ == "__main__":
     train()
-
