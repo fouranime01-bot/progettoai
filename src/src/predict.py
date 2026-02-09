@@ -1,6 +1,6 @@
 import torch
 from torchvision import datasets, transforms
-from src.model import SimpleNet
+from src.src.model import SimpleNet
 
 
 def predict():

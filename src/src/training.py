@@ -1,7 +1,7 @@
 import torch
 from torch.utils.data import DataLoader
 from torchvision import datasets, transforms
-from src.model import SimpleNet
+from src.src.model import SimpleNet
 
 
 def train():
