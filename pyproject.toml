@@ -1,0 +1,18 @@
+[project]
+name = "myproject"
+version = "0.1.0"
+description = "Progetto MLOps per l'esame"
+authors = [
+    { name="Luigi" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "torch",
+    "numpy",
+    "pandas",
+    "matplotlib",
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
