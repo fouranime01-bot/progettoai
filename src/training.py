@@ -8,8 +8,17 @@ def train():
     print("Inizio training...")
 
     transform = transforms.ToTensor()
-    train_data = datasets.FashionMNIST(root="data", train=True, download=True, transform=transform)
-    loader = DataLoader(train_data, batch_size=32, shuffle=True)
+    train_data = datasets.FashionMNIST(
+        root="data",
+        train=True,
+        download=True,
+        transform=transform
+    )
+    loader = DataLoader(
+        train_data,
+        batch_size=32,
+        shuffle=True
+    )
 
     model = SimpleNet()
     loss_fn = torch.nn.CrossEntropyLoss()
