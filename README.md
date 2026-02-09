@@ -1,19 +1,40 @@
-# Progetto 
 
-Questo progetto include:
-- Package Python installabile
-- Modello PyTorch semplice
-- Script di training e predizione
-- Notebook EDA
-- Dockerfile per containerizzazione
-- Test unitari
-- Struttura compatibile con CI/CD
+------------------------------------------------------------
+INSTALLAZIONE COME PACCHETTO
+------------------------------------------------------------
 
-## Installazione
-pip install .
+Da dentro la cartella del progetto:
+    pip install .
 
-## Training
-python myproject/training.py
+------------------------------------------------------------
+ESECUZIONE LOCALE
+------------------------------------------------------------
 
-## Predizione
-python myproject/predict.py --input example.png
+EDA:
+    python -m src.eda
+
+Training:
+    python -m src.training
+
+Predizione:
+    python -m src.predict
+
+
+------------------------------------------------------------
+DOCKER
+------------------------------------------------------------
+
+Build dell’immagine:
+    docker build -t progettoai .
+
+Esecuzione EDA:
+    docker run --rm progettoai python -m src.eda
+
+Training (salva il modello in artifacts/):
+    docker run --rm -v %cd%/artifacts:/app/artifacts progettoai python -m src.training
+
+Predizione:
+    docker run --rm progettoai python -m src.predict
+
+
+
