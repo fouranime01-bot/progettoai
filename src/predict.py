@@ -1,6 +1,6 @@
 import torch
 from torchvision import datasets, transforms
-from myproject.model import SimpleNet
+from src.model import SimpleNet
 
 def predict():
     print("Caricamento modello...")
