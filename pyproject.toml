@@ -1,9 +1,9 @@
 [project]
 name = "myproject"
 version = "0.1.0"
-description = "Progetto MLOps per l'esame"
+description = "Progetto"
 authors = [
-    { name="Luigi" }
+    { name="" }
 ]
 requires-python = ">=3.10"
 dependencies = [
@@ -19,8 +19,9 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-package-dir = {"" = "."}
+package-dir = {"" = "src"}
+
 
 [tool.setuptools.packages.find]
-include = ["myproject"]
+include = ["src"]
 exclude = ["tests", "notebooks", "data", "artifacts"]
