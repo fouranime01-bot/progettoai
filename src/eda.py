@@ -49,7 +49,8 @@ def main():
     plt.title("Distribuzione delle classi (Fashion-MNIST)")
     plt.xlabel("Classe")
     plt.ylabel("Numero di campioni")
-    plt.xticks(unique, [CLASS_NAMES[u] for u in unique], rotation=45, ha="right")
+    plt.xticks(unique, [CLASS_NAMES[u] for u in unique],
+                rotation=45, ha="right")
     plt.tight_layout()
     plt.show()
 

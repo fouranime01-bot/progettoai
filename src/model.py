@@ -1,7 +1,7 @@
 import torch.nn as nn
 
-class SimpleNet(nn.Module):
 
+class SimpleNet(nn.Module):
 
     def __init__(self):
         super().__init__()
@@ -11,7 +11,6 @@ class SimpleNet(nn.Module):
             nn.ReLU(),
             nn.Linear(128, 10)
         )
-
 
     def forward(self, x):
         return self.layers(x)
