@@ -36,7 +36,9 @@ def train():
                 print(f"Epoch {epoch}, Batch {batch_idx}, Loss: {loss.item():.4f}")
 
     torch.save(model.state_dict(), "artifacts/model.pt")
-    print("Modello salvato in artifacts/model.pt")
+    print(
+    "Modello salvato in artifacts/model.pt"
+    )
 
 
 if __name__ == "__main__":
