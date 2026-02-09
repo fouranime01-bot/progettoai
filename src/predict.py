@@ -9,10 +9,10 @@ def predict():
     model.eval()
 
     transform = transforms.ToTensor()
-    test_data = datasets.MNIST(root="data", train=False, download=True, transform=transform)
+    test_data = datasets.FashionMNIST(root="data", train=True, download=True, transform=transform)
 
-    x, y = test_data[0]  # prima immagine del test set
-    x = x.unsqueeze(0)   # aggiunge batch dimension
+    x, y = test_data[0]  
+    x = x.unsqueeze(0)   
 
     with torch.no_grad():
         pred = model(x)

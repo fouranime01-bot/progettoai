@@ -7,7 +7,7 @@ def train():
     print("Inizio training...")
 
     transform = transforms.ToTensor()
-    train_data = datasets.MNIST(root="data", train=True, download=True, transform=transform)
+    train_data = datasets.FashionMNIST(root="data", train=True, download=True, transform=transform)
     loader = DataLoader(train_data, batch_size=32, shuffle=True)
 
     model = SimpleNet()
