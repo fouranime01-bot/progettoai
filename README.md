@@ -2,8 +2,11 @@
 ------------------------------------------------------------
 INSTALLAZIONE COME PACCHETTO
 ------------------------------------------------------------
+# crea l'ambiente conda e installa le dipendenze 
+conda create -n progettoai-main python=3.10 -y 
+conda activate progettoai-main
 
-Con miniconda da dentro la cartella del progetto:
+da dentro la cartella del progetto:
     pip install .
 
 ------------------------------------------------------------

@@ -15,4 +15,3 @@ def test_model_forward():
     out = model(x)
 
     assert out.shape == (1, 10)
-
