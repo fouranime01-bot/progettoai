@@ -3,7 +3,7 @@
 INSTALLAZIONE COME PACCHETTO
 ------------------------------------------------------------
 
-Da dentro la cartella del progetto:
+Con miniconda da dentro la cartella del progetto:
     pip install .
 
 ------------------------------------------------------------
